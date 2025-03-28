@@ -42,7 +42,7 @@ const App = () => {
                             <a href="#" className='item__link'> 
                                     <span className='container__icon'>
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon__header icon--alternative-color"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M9 12l.01 0" /><path d="M13 12l2 0" /><path d="M9 16l.01 0" /><path d="M13 16l2 0" /></svg>
-                                        Menu
+                                        Menú
                                     </span>
                                     <span className='item__under-Line'></span>
                                 </a>
@@ -68,9 +68,11 @@ const App = () => {
                                     <span className='item__under-Line'></span>
                                 </a>
                             </li>
+                        </ul>
+                        <ul className='items'>
                             <li className='item item--list-buttons'>
-                                <button className='btn btn--bg-wh'>Ingresar</button>
-                                <button className='btn btn--bg-bl'>Únete</button>
+                                <a href='#' className='btn btn--bg-wh'>Ingresar</a>
+                                <a href='#' className='btn btn--bg-gr'>Únete</a>
                             </li>
                         </ul>
                     </nav>
@@ -85,44 +87,78 @@ const App = () => {
             </div>
         </header>
         <section className='hero'>
+            <div className='hero__background-images'>
+                <div className='hero__background-container-image'>
+                    <img src="/public/dona_starbucks_hero.webp" className='hero__background-image' alt="" />
+                </div>
+                <div className='hero__background-container-image'>
+                    <img src="/public/frapuccino_starbucks_hero.webp" className='hero__background-image' alt="" />
+                </div>
+            </div>
             <div className='hero__container'>
                 <div className='hero__content'>
                     <div className='hero__text'>
-                        <h1 className='hero__title'>
-                            Prueba Nuestros Nuevos Sabores de Temporada en Starbucks
+                        <h1 className="hero__title">
+                            <span className="brand-name-small">STARBUCKS IS...</span>
+                            <span className="hero__title-block">
+                                PURE <span className="hero__title-highlight-text">LOVE </span><br />
+                                OF <span className="hero__title-highlight-text">COFFEE</span>
+                            </span>
                         </h1>
-                        <button className='hero__button'>Check our menu</button>
+                        <div className='hero__container-buttons'>
+                            <button className='btn btn--bg-gr hero__button'>
+                                <span className='container__icon'>
+                                    <svg  xmlns="http://www.w3.org/2000/svg" style={{color:'#fff'}}  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>
+                                </span>
+                                Check our menu
+                            </button>
+                            <button className='btn btn--bg-wh hero__button'>
+                                <span className='container__icon'>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M5 16v1a2 2 0 0 0 4 0v-5h-3a3 3 0 0 0 -3 3v1h10a6 6 0 0 1 5 -4v-5a2 2 0 0 0 -2 -2h-1" /><path d="M6 9l3 0" /></svg>
+                                </span>
+                                Free Delivery
+                            </button>
+                        </div>
                     </div>
                     <ul className='hero__products'>
                         <li className='hero__product'>
                             <div className='hero__product-container-img'>
-                                <img src="" alt="Product 1" className='hero__product-img' />
+                                <img src="/public/starbucks-hero-product-1.png" alt="Product 1" className='hero__product-img' />
                             </div>
                             <div className='hero__product-description'>
-                                <p className='hero__product-text'>Delicioso café con leche de temporada</p>
+                                <p className='hero__product-text'>Frappuccino de fresa</p>
+                                <button className='btn btn--bg-gr'>Ordenar</button>
+                            </div>
+                            <div>
+                                
                             </div>
                         </li>
                         <li className='hero__product'>
                             <div className='hero__product-container-img'>
-                                <img src="" alt="Product 2" className='hero__product-img' />
+                                <img src="/public/starbucks-hero-product-2.png" alt="Product 2" className='hero__product-img' />
                             </div>
                             <div className='hero__product-description'>
-                                <p className='hero__product-text'>Refrescante bebida de frutas</p>
+                                <p className='hero__product-text'>Frappuccino mixto</p>
+                                <button className='btn btn--bg-gr'>Ordenar</button>
+
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div className='hero__highlight'>
                     <div className='hero__highlight-img-container'>
-                        <img src="" className='hero__highlight-img' alt="Highlight product" />
+                        <img src="/public/starbucks-hero.png" className='hero__highlight-img' alt="Highlight product" />
                     </div>
                     <div className='hero__highlight-info'>
-                        <p className='hero__highlight-title'>Bebida Destacada</p>
-                        <p className='hero__highlight-description'>Disfruta del sabor único de esta temporada</p>
+                        <p className='hero__highlight-title hero__highlight-title--border-white'>FRAPPUCCINO</p>
+                        <p className='hero__highlight-title hero__highlight-title--color-white'>FRAPPUCCINO</p>
                     </div>
                 </div>
             </div>
         </section>
+        
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     </>
   )

@@ -202,6 +202,28 @@ const App = () => {
                 {/* End card */}
             </div>
         </section>
+        <section className='caramel'>
+            <div className='caramel__background-images'>
+                <div className='container__background-image'>
+                    <img src="/granos de cafe.png" className='caramel__background-image' alt="" />
+                </div> 
+                {/* <div className='container__background-image'>
+                    <img src="/hojas_con_cafe.png" className='caramel__background-image' alt="" />
+                </div>  */}
+            </div>
+            <div className='caramel__container'>
+                <div className='caramel__container-image'>
+                    <img src="/mochiato_redimencionar-removebg-preview-comprimida.png" className='caramel__image' alt="img-Caramel-Macchiato" />
+                    <div className='container__background-image'>
+                        <img src="/fondo-caramelo.png" className='caramel__background-image' alt="" />
+                    </div> 
+                </div>
+                <div className='caramel__info'>
+                    <h2 className='caramel__title'>Caramel Macchiato</h2>
+                    <p className='caramel__text'>La combinación de caramelo y café que te hará sonreír.</p>
+                </div>
+            </div>
+        </section>
 
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 

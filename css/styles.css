@@ -69,6 +69,7 @@ img{
     align-items: center;
     gap: .5rem;
     justify-content: center;
+    width: fit-content;
 }
 
 .btn:hover{
@@ -86,6 +87,16 @@ img{
 
 .btn--with-100{
     width: 100%;
+}
+
+.btn--medium{
+    font-size: 1.5rem;
+}
+
+@media(min-width:768px){
+    .btn--medium{
+        font-size: 1.1rem;
+    }
 }
 
 .text-emphasis{
@@ -145,7 +156,6 @@ img{
     .logo__container{
         display: unset;
     }
-
 }
 
 .logo__link{
@@ -1209,4 +1219,134 @@ img{
     font-size: 1.4rem;
     font-weight: 500;
     margin-top: 1rem;    
+}
+/* END CARAMEL */
+
+/* START REWARDS */
+
+.rewards{
+    position: relative;
+    background:radial-gradient(rgba(1,48,41,1),#002220);
+    padding: 5rem 0;
+    /* background-color: ; */
+}
+
+.rewards__mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: purple; */
+}
+
+@media(min-width:768px){
+    .rewards__mask{
+        width: 50%;
+    }
+}
+
+.rewards__mask::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: radial-gradient(rgba(0,32,33,.75)) ; */
+    background:rgba(0,32,33,.85) ;
+}
+
+.rewards__mask-img:nth-child(1){
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rewards__container{
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+    position: relative;
+}
+
+@media(min-width:768px){
+    .rewards__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+
+.rewards__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media(min-width:768px){
+    .rewards__logo{
+        margin: 0;
+    }
+}
+
+.rewards__logo-container{
+    background-color: #fff;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.rewards__name-store, .rewards__logo-text{
+    color: #fff;
+    font-weight: 900;
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.rewards__logo-text{
+
+}
+
+.rewards__title,.rewards__text{
+    color: #fff;
+    margin: 0;
+}
+
+.rewards__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+@media(min-width:768px){
+    .rewards__info{ 
+    }
+}
+
+.rewards__title{
+        font-size: 2.8rem;
+    text-align: center;
+    line-height: .9;
+}
+
+@media(min-width:768px){
+    .rewards__title{
+        font-size: 3.5rem;
+
+    }
+}
+
+.rewards__text{
+    font-size: 1.4rem;
+    text-align: center;
+    /* margin-top: 1.5rem; */
+    font-weight: 400;
+    line-height: 1.2;
 }

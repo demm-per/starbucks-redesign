@@ -1347,6 +1347,141 @@ img{
     font-size: 1.4rem;
     text-align: center;
     /* margin-top: 1.5rem; */
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.2;
+}
+
+/* END REWARDS */
+
+/* START BANNER */
+
+.banner{
+    position: relative;
+}
+
+.banner__mask-container{
+    position: absolute;
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.banner__mask-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,32,33,.90);
+    /* z-index: 3; */
+}
+
+.banner__mask-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0,32,33,.75); */
+}
+
+.banner__background-image{
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+}
+
+.termo_1,.termo_2,.ambiente{
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    object-fit: cover;
+    /* opacity: .4; */
+}
+
+.termo_1{
+    left: 0;
+    height: 11rem;
+    z-index: 2;
+}
+
+.termo_2{
+    right: 0;
+    height: 9.5rem;
+    z-index: 2;
+}
+
+.ambiente{
+    min-height: 100%;
+    /* height: 1rem; */
+    width: 100%;
+    object-fit: cover;
+    opacity: .5;    
+    z-index: 1;
+}
+
+@media(min-width:768px){
+    .termo_1,.termo_2{
+        opacity: 1;
+        /* z-index: 1; */
+
+    }
+    
+    .termo_1{
+        height: 28rem;
+        /* left: -1.5rem; */
+    }
+    
+    .termo_2{
+        height: 24rem;
+        bottom: 0rem;
+    }
+    
+    .ambiente{
+        width: 100%;
+        opacity: .5;
+    }
+}
+
+.banner__container{
+    position: relative;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    max-width: 120rem;
+    /* width: 90%; */
+    margin: auto;
+    z-index: 3;
+}
+
+@media(min-width:768px){
+    .banner__container{
+        padding: 5rem;
+    }
+}
+
+.banner__info{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner__title, .banner__text{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.banner__title{
+    font-size: 2.8rem;
+}
+
+.banner__text{
+    font-size: 1.4rem;
+    font-weight: 500;
 }

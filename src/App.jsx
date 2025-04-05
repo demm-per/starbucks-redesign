@@ -248,6 +248,25 @@ const App = () => {
             </div>
         </section>
 
+        <section className='banner'>
+            <div className='banner__mask-container'>
+                <img src="/fondo1.jpg" className='banner__background-image'  alt="" />
+                <img src="/termo-1.webp" className='banner__background-image termo_1'  alt="" />
+                <img src="/termo-2.webp" className='banner__background-image termo_2'  alt="" />
+                <img src="/hojas-fondo-removebg.png" className='banner__background-image ambiente'  alt="" />
+            </div>
+            <div className='banner__container'>
+                <div className='banner__info'>
+                    <h2 className='banner__title'>Reutiliza y ahorra con cada sorbo</h2>
+                    <p className='banner__text'>Trae tu vaso o termo y disfruta de $8 de descuento en cada bebida, únete al cambio.</p>
+                    <a href="" className='btn btn--bg-gr btn--medium'>
+                        Conoce más
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     </>

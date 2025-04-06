@@ -265,6 +265,32 @@ const App = () => {
                 </div>
             </div>
         </section>
+        <section className='block'>
+            <div className='block__container'>
+                <div className='info-section'>
+                    <a href="#" className='info-section__link'>
+                        <div className='info-section__container-image'>
+                            <img src="/noticias starbucks.jpg" className='info-section__image' alt="" />
+                        </div>
+                        <div className='info-section__description'>
+                            <p className='info-section__text'>NOTICIAS STARBUCKS</p>
+                            <a href="#" className='btn btn--bg-gr btn--medium'>Ver más</a>
+                        </div>
+                    </a>
+                </div>
+                <div className='info-section'>
+                    <a href="#" className='info-section__link'>
+                        <div className='info-section__container-image'>
+                            <img src="/promociones.jpg" className='info-section__image' alt="" />
+                        </div>
+                        <div className='info-section__description'>
+                            <p className='info-section__text'>Conoce nuestras promociones</p>
+                            <a href="#" className='btn btn--bg-gr btn--medium'>Ver más</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
         
 
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

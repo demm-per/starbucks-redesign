@@ -156,6 +156,47 @@ const App = () => {
                 </div>
             </div>
         </section>
+        <section className='summer-refresh'>
+            <div className='summer-refresh__container-images'>
+                <img src="/summer-background-4.jpg" className='summer-refresh__background-image' alt="" />
+            </div>
+            <div className='summer-refresh__container'>
+                <h2 className='summer-refresh__title'>Summer Refresh</h2>
+                <p className='summer-refresh__caption'>Disfruta el verano en cada sorbo.</p>
+                <div className='summer-refresh__cards'>
+                    <div className='summer-refresh__card summer-refresh__berry'>
+                        <div className='summer-refresh__contain-mask summer-refresh__contain-mask-berry'>
+                            <img src="/background-barry.png" className='summer-refresh__mask summer-refresh__mask-berry' alt="" />
+                            <img src="/background-barry-stain.png" className='summer-refresh__mask summer-refresh__mask-berry-stains' alt="" />
+                        </div>
+                        <img src="/Summer-Berry.png" className='summer-refresh__image-product' alt="" />
+                        <div className='summer-refresh__body'>
+                            <p className='summer-refresh__product-title'>Berry</p>
+                        </div>
+                    </div>
+                    <div className='summer-refresh__card summer__refresh-skies'>
+                        <div className='summer-refresh__contain-mask summer-refresh__contain-mask-skies'>
+                            <img src="/background-skies.png" className='summer-refresh__mask summer-refresh__mask-skies' alt="" />
+                            {/* <img src="/summer-background-skies.png" className='summer-refresh__mask summer-refresh__mask-skies-milk' alt="" /> */}
+                        </div>
+                        <img src="/Summer-Skies-Drink.png" className='summer-refresh__image-product' alt="" />
+                        <div className='summer-refresh__body'>
+                            <p className='summer-refresh__product-title'>Skies</p>
+                        </div>
+                    </div>
+                    <div className='summer-refresh__card summer-refresh__lemonade'>
+                        <div className='summer-refresh__contain-mask summer-refresh__contain-mask-lemonade'>
+                            <img src="/Summer-Berry-with-Lemonade-background.png" className='summer-refresh__mask summer-refresh__mask-lemonade' alt="" />
+                            <img src="/mancha_pintura.png" className='summer-refresh__mask summer-refresh__mask-stains' alt="" />
+                        </div>
+                        <img src="/summer-berry-with-lemonade.png" className='summer-refresh__image-product' alt="" />
+                        <div className='summer-refresh__body'>
+                            <p className='summer-refresh__product-title'>Lemonade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section className='section'>
             <div className='section__background-images'>
                 <div className='section__logo '>
@@ -292,9 +333,6 @@ const App = () => {
             </div>
         </section>
         
-
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
     </>
   )
 }

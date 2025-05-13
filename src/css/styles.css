@@ -1317,11 +1317,15 @@ img{
 }
 
 .card__title{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 900;
     color: #313131;
     margin: 0;
     text-align: center;
+}
+
+.card:nth-child(2) .card__title{
+    color: #fff;
 }
 
 .card__title--color-wh{
@@ -1338,6 +1342,10 @@ img{
     margin-top: .5rem;
     font-weight: 500;
     color: #313131;
+}
+
+.card:nth-child(2) .card__description{
+    color: #fff;
 }
 
 .card__description--color-wh{
@@ -1585,12 +1593,12 @@ img{
 
 }
 
-.rewards__title,.rewards__text{
+.content-box__title,.content-box__text{
     color: #fff;
     margin: 0;
 }
 
-.rewards__info{
+.content-box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1599,24 +1607,24 @@ img{
 }
 
 @media(min-width:768px){
-    .rewards__info{ 
+    .content-box{ 
     }
 }
 
-.rewards__title{
+.content-box__title{
         font-size: 2.8rem;
     text-align: center;
     line-height: .9;
 }
 
 @media(min-width:768px){
-    .rewards__title{
+    .content-box__title{
         font-size: 3.5rem;
 
     }
 }
 
-.rewards__text{
+.content-box__text{
     font-size: 1.4rem;
     text-align: center;
     /* margin-top: 1.5rem; */
@@ -1673,6 +1681,7 @@ img{
     width: auto;
     object-fit: cover;
     /* opacity: .4; */
+    transition: .3s ease-in-out;
 }
 
 .termo_1{
@@ -1700,8 +1709,25 @@ img{
     .termo_1,.termo_2{
         opacity: 1;
         /* z-index: 1; */
-
     }
+    
+    .termo_1{
+        height: 20rem;
+        /* left: -1.5rem; */
+    }
+    
+    .termo_2{
+        height: 17rem;
+        bottom: 0rem;
+    }
+    
+    .ambiente{
+        width: 100%;
+        /* opacity: .5; */
+    }
+}
+
+@media(min-width:992px){
     
     .termo_1{
         height: 28rem;
@@ -1713,27 +1739,18 @@ img{
         bottom: 0rem;
     }
     
-    .ambiente{
-        width: 100%;
-        /* opacity: .5; */
-    }
 }
 
 .banner__container{
     position: relative;
-    padding: 10rem 0;
+    padding: 5rem 0;
     display: flex;
     justify-content: center;
-    max-width: 120rem;
-    /* width: 90%; */
+    max-width: 30rem;
+    width: 90%;
     margin: auto;
     z-index: 3;
-}
 
-@media(min-width:768px){
-    .banner__container{
-        padding: 5rem;
-    }
 }
 
 .banner__info{

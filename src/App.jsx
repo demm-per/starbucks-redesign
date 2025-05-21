@@ -12,6 +12,7 @@ import Banner from './components/Banner/Banner';
 import RewardsBanner from './components/RewardsBanner/RewardsBanner';
 import PromoHighlights from './components/PromoHighlights/PromoHighlights';
 import Footer from './components/Footer/Footer';
+import { ViewportProvider } from './context/ViewportContext';
 
 const App = () => {
     const nav = useRef(null);
@@ -39,7 +40,7 @@ const App = () => {
     };
 
     return (
-        <>
+        <ViewportProvider>
             <header className='header'>
                 <div className='header__container'>
                     <div className='logo__container'>
@@ -106,7 +107,7 @@ const App = () => {
             <Banner/>
             <PromoHighlights/>
             <Footer/>
-        </>
+        </ViewportProvider>
     )
 }
 /*

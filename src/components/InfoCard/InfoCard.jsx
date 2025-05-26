@@ -1,16 +1,16 @@
 import BackgroundImage from "../BackgroundImage/BackgroundImage"
 import ContentBox from "../ContentBox/ContentBox"
 
-const InfoCard = ({data}) => {
+const InfoCard = ({data, ...props}) => {
     return (
-        <div className='info-section'>
+        <div className='info-section' {...props}>
             <a href="#" className='info-section__link'>
-                <BackgroundImage
+                {/* <BackgroundImage
                     classContainer={data.classContainerImage}
                     urlImage={data.urlBackgroundImage}
                     classImage={data.classBackgroundImage}
                     altImage={data.altText}
-                />
+                /> */}
                 <div className='info-section__description'>
                     <ContentBox.Title title={data.title}/>
                     <ContentBox.Button text={data.textButton}/>

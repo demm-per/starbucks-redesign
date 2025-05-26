@@ -29,7 +29,7 @@ const SummerRefreshCard = ({
                     variants={fruitVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.5 }}
                 />
                 <MotionCustomImage
                     src={urlBackgroundImageProductColors}
@@ -38,7 +38,7 @@ const SummerRefreshCard = ({
                     variants={colorVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.5 }}
                 />
             </div>
             <MotionCustomImage
@@ -56,7 +56,7 @@ const SummerRefreshCard = ({
                     variants={titleVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.5 }}
                 >
                     {title}
                 </motion.p>

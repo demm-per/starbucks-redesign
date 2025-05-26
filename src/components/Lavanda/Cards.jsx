@@ -1,32 +1,10 @@
-import Card from "./Card"
+import {motion} from 'framer-motion';
 
-{/*<div className='card'>
-            <div className='card__container_image matcha'>
-                <img src="/Iced-Lavanda-Matcha-Latte-STARBUCKS-PRIMAVERA.webp" className='card__image' alt="" />
-            </div>
-            <div className='card__body'>
-                <p className='card__title'>Iced Lavanda Matcha Latte</p>
-                <p className='card__description'>Suave, elegante y refrescante.</p>
-            </div>
-        </div>
-     <div className='card'>
-                <div className='card__container_image velvet'>
-                    <img src="/Iced-Lavanda-Velvet-Latte-STARBUCKS-PRIMAVERA.webp" className='card__image' alt="" />
-                </div>
-                <div className='card__body'>
-                    <p className='card__title card__title--color-wh'>Iced Lavanda Velvet Latte</p>
-                    <p className='card__description card__description--color-wh'>Cremoso, dulce y aromático.</p>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='card__container_image cream-frappucciono'>
-                    <img src="/Lavanda-Cream-Frappucciono-STARBUCKS-PRIMAVERA.webp" className='card__image' alt="" />
-                </div>
-                <div className='card__body'>
-                    <p className='card__title'>Lavanda Cream Frappucciono</p>
-                    <p className='card__description'>Suave, elegante y refrescante.</p>
-                </div>
-            </div> */}
+import Card from "./Card";
+import { fadeInStagger } from '../../animations/fadeInStagger ';
+
+
+const MotionCard = motion(Card);
 
 const Cards = () => {
     const products = [ 
@@ -53,7 +31,15 @@ const Cards = () => {
         <div className='cards'>
             {
                 products.map((product,index) =>(
-                    <Card product={product} key={index}/>
+                    <MotionCard 
+                        key={index}
+                        product={product}
+                        custom={index}
+                        variants={fadeInStagger}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                    />
                 ))
             }
         </div>

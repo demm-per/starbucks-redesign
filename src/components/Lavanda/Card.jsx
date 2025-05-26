@@ -1,6 +1,6 @@
-const Card = ({product}) => {
+const Card = ({product, ...props}) => {
     return (
-        <div className='card'>
+        <div className='card' {...props}>
             <div className={product.classContainerImage}>
                 <img src={product.urlImageProduct} className='card__image' alt="" />
             </div>

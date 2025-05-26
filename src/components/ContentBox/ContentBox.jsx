@@ -1,6 +1,6 @@
-const ContentBox = ({children}) => {
+const ContentBox = ({children, ...props}) => {
     return (
-        <div className='content-box'>
+        <div className='content-box' {...props}>
             {children}
         </div>
     )

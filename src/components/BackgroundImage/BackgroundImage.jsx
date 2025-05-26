@@ -1,7 +1,7 @@
-const BackgroundImage = ({classContainer, urlImage, classImage, altImage}) => {
+const BackgroundImage = ({classContainer, urlImage, classImage, altImage, ...props}) => {
   return (
-    <div className={classContainer}>
-        <img src={urlImage} className={classImage} alt={altImage} />
+    <div className={classContainer} {...props}>
+        <img loading="lazy" src={urlImage} className={classImage} alt={altImage} />
     </div>
   )
 }

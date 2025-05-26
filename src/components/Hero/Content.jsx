@@ -32,13 +32,13 @@ const Content = () => {
                 <MotionButtons 
                     className='hero__container-buttons'
                     variants={{
-                        hidden: { opacity: 0, y: 250 },
+                        hidden: { opacity: 0, y: 140 },
                         visible: { opacity: 1, y: 0 },
                     }}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
-                    transition={{ duration: 1.6, ease: "easeOut" }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
                 >
                     <CustomButton className='btn btn--bg-gr hero__button'>
                         <span className='container__icon'>

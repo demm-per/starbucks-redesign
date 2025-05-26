@@ -44,7 +44,7 @@ const SeasonalShowcase = () => {
 
     const productVariants = viewportWidth >= 768 ? {
         hidden: { opacity: 1, rotate: 15, scale: 0, x: 130, y: 200, },
-        visible: { opacity: 1, rotate: 0, scale: 1, x: 0, y: 0, transition: { duration: 1.5 } },
+        visible: { opacity: 1, rotate: 0, scale: 1, x: 0, y: -15, transition: { duration: 1.5 } },
     } : {
         hidden: { opacity: 0, rotate: 15, scale: 0, x: 130, y: 200, },
         visible: { opacity: 1, rotate: 0, scale: 1, x: 0, y: 0, transition: { duration: 1.5 } },

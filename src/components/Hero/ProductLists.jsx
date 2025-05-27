@@ -7,8 +7,8 @@ const MotionProductCard = motion.create(ProductCard);
 
 const ProductLists = () => {
     const products = [
-        { img: "/starbucks-hero-product-1.webp", text: "Frappuccino de fresa", alt:"Frappuccino de fresa" },
-        { img: "/starbucks-hero-product-2.webp", text: "Frappuccino de cereza", alt:"Frappuccino de cereza" },
+        { img: "/starbucks-hero-product-1.webp", text: "Frappuccino de fresa", alt:"" },
+        { img: "/starbucks-hero-product-2.webp", text: "Frappuccino de cereza", alt:"" },
       ];
     return (
         <CustomList className='hero__products'>

@@ -7,9 +7,9 @@ import BackgroundImage from "../BackgroundImage/BackgroundImage"
 import CustomImage from '../CustomImage/CustomImage';
 import CustomDiv from '../CustomDiv/CustomDiv';
 
-const MotionBackgroundImage = motion(BackgroundImage);
-const MotionCustomImage = motion(CustomImage);
-const MotionCustomDiv = motion(CustomDiv);
+const MotionBackgroundImage = motion.create(BackgroundImage);
+const MotionCustomImage = motion.create(CustomImage);
+const MotionCustomDiv = motion.create(CustomDiv);
 
 const Caramel = () => {
     const {viewportWidth} = useContext(ViewportContext);
@@ -17,9 +17,9 @@ const Caramel = () => {
         <section className='caramel'>
             <MotionBackgroundImage
                 classContainer={'container__background-image'}
-                urlImage={'/granos de cafe.png'}
+                urlImage={'/granos de cafe.webp'}
                 classImage={'caramel__background-image'}
-                altImage={''}
+                altImage={'granos de cafe'}
                 variants={{
                     hidden: { opacity: 0, },
                     visible: { opacity: 1, },
@@ -32,7 +32,7 @@ const Caramel = () => {
             <div className='caramel__container'>
                 <div className='caramel__container-image'>
                     <MotionCustomImage
-                        src="/mochiato_redimencionar-removebg-preview-comprimida.png"
+                        src="/machiato.webp"
                         className='caramel__image'
                         alt="img-Caramel-Macchiato"
                         variants={{hidden: { opacity: 0, y: -100 },visible: { opacity: 1, y: 0 },}}
@@ -43,9 +43,9 @@ const Caramel = () => {
                     />
                     <MotionBackgroundImage
                         classContainer={'container__background-image'}
-                        urlImage={'/fondo-caramelo.png'}
+                        urlImage={'/fondo-caramelo.webp'}
                         classImage={'caramel__background-image'}
-                        altImage={''}
+                        altImage={'Salpicaduras de Caramelo'}
                         variants={{
                             hidden: { opacity: 0, y: -100, scale:0},
                             visible: { opacity: 1, y: 0, scale:1},

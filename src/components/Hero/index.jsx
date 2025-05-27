@@ -5,7 +5,7 @@ import BackgroundImages from "./BackgroundImages";
 import Content from "./Content";
 import Highlight from './Highlight';
 
-const MotionBackgroundImages = motion(BackgroundImages);
+const MotionBackgroundImages = motion.create(BackgroundImages);
 
 const index = () => {
     return (

@@ -4,7 +4,7 @@ import Card from "./Card";
 import { fadeInStagger } from '../../animations/fadeInStagger ';
 
 
-const MotionCard = motion(Card);
+const MotionCard = motion.create(Card);
 
 const Cards = () => {
     const products = [ 

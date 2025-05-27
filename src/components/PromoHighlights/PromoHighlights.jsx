@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import BackgroundImage from "../BackgroundImage/BackgroundImage";
 import InfoCard from "../InfoCard/InfoCard";
 
-const MotionInfoCard = motion(InfoCard);
+const MotionInfoCard = motion.create(InfoCard);
 
 const PromoHighlights = () => {
     const cards = [
@@ -21,15 +21,15 @@ const PromoHighlights = () => {
     const backgroundImageCard = [
         {
             classContainerImage:'info-section__container-image',
-            urlBackgroundImage:'/noticias starbucks.jpg',
+            urlBackgroundImage:'/noticias starbucks.webp',
             classBackgroundImage:'info-section__image',
-            altText:'',
+            altText:'vasos starbucks',
         },
         {
             classContainerImage:'info-section__container-image',
-            urlBackgroundImage:'/promociones.jpg',
+            urlBackgroundImage:'/promociones.webp',
             classBackgroundImage:'info-section__image',
-            altText:'',
+            altText:'carta de bebidas',
         }
     ]
     return (

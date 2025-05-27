@@ -4,8 +4,8 @@ import CustomImage from "../CustomImage/CustomImage";
 import ContentBox from "../ContentBox/ContentBox";
 import CustomDiv from "../CustomDiv/CustomDiv";
 
-const MotionContentBox = motion(ContentBox);
-const MotionCustomImage = motion(CustomImage);
+const MotionContentBox = motion.create(ContentBox);
+const MotionCustomImage = motion.create(CustomImage);
 
 const Banner = () => {
     return (
@@ -13,15 +13,15 @@ const Banner = () => {
             <div className='banner__mask-container'>
                 <CustomDiv className="banner__mask">
                     <MotionCustomImage
-                        src="/fondo1.jpg"
+                        src="/background-banner.webp"
                         className='banner__background-image'
-                        alt=""
+                        alt="cafeteria"
                     />
 
                     <MotionCustomImage
-                        src="/hojas-fondo-removebg.png"
+                        src="/hojas-fondo-removebg.webp"
                         className='banner__background-image ambiente'
-                        alt=""
+                        alt="marco de hojas"
                         initial={{ opacity: 0, scale: 1.5 }}
                         whileInView={{ opacity: .7, scale: 1 }}
                         transition={{ duration: 1.6, }}
@@ -32,7 +32,7 @@ const Banner = () => {
                 <MotionCustomImage
                     src="/termo-1.webp"
                     className='banner__background-image termo_1'
-                    alt=""
+                    alt="termo rosa"
                     initial={{ opacity: 0, y: 100, scale: .8 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ duration: 1.6, }}
@@ -41,7 +41,7 @@ const Banner = () => {
                 <MotionCustomImage
                     src="/termo-2.webp"
                     className='banner__background-image termo_2'
-                    alt=""
+                    alt="termo verde"
                     initial={{ opacity: 0, y: 100, scale: .5 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ duration: 1.6, }}

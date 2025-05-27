@@ -5,7 +5,7 @@ import Cards from './Cards';
 import CustomSection from '../CustomSection/CustomSection';
 import CustomDiv from '../CustomDiv/CustomDiv';
 
-const MotionCustomDiv = motion(CustomDiv);
+const MotionCustomDiv = motion.create(CustomDiv);
 
 const Lavanda = () => {
     return (

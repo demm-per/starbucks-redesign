@@ -8,7 +8,7 @@ export const ViewportProvider = ({ children }) => {
   useEffect(() => {
     const handleResize = () => {
       setViewportWidth(window.innerWidth);
-      console.log(viewportWidth)
+      // console.log(viewportWidth)
     };
     handleResize();
     window.addEventListener("resize", handleResize);

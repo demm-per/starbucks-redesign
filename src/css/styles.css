@@ -210,7 +210,7 @@ img{
     top: 0;
     left: 0; 
     background-size: cover;
-    background-image: url(https://i.pinimg.com/736x/82/f3/89/82f389fce93d22c083c9b9c7fd028aed.jpg);
+    background-image: url(/store-starbucks.webp);
     z-index: 1;
 }
 
@@ -1078,7 +1078,7 @@ img{
     height: 100%;
     top: 0;
     left: 0;
-    background: url(/a.jpg);
+    background: url(/background-image-section.webp);
     background-repeat: no-repeat;
     background-size: cover;
     /* filter: blur(.1rem); */
@@ -1210,7 +1210,7 @@ img{
 
 .card{
     position: relative;
-    background: url(https://i.pinimg.com/736x/50/c4/0b/50c40bd5fb025c70246f314a0458ade7.jpg);
+    background: url(/background-image-card.webp);
     border-radius: 1rem;
     padding: 1rem;
     width: 15rem;
@@ -1320,7 +1320,7 @@ img{
     left: -20%;
     height: 140%;
     width: 140%;
-    background: url(/LavandaCream-Frappucciono-bg.png);
+    background: url(/LavandaCream-Frappucciono-bg.webp);
     background-repeat: no-repeat;
     background-size: 15.5rem, 80%, 80%;
     background-position: center, center;
@@ -1943,7 +1943,7 @@ img{
 /* START FOOTER */
 .footer{
     /* margin-top: 5rem; */
-    background: url(/background-footer.jpg) no-repeat;
+    background: url(/background-footer.webp) no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -2034,7 +2034,7 @@ img{
 }
 
 .info__title{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0;
     /* background-color: red; */
     /* text-align: center; */

@@ -6,13 +6,13 @@ import CustomImage from '../CustomImage/CustomImage';
 import {ViewportContext} from '../../context/ViewportContext';
 import CustomParagraph from '../CustomParagraph/CustomParagraph';
 
-const MotionCustomDiv = motion(CustomDiv);
-const MotionCustomParagraph = motion(CustomParagraph);
+const MotionCustomDiv = motion.create(CustomDiv);
+const MotionCustomParagraph = motion.create(CustomParagraph);
 
 const Highlight = () => {
 
     const {viewportWidth} = useContext(ViewportContext);
-    console.log(viewportWidth >= 768)
+    // console.log(viewportWidth >= 768)
     return (
         <div className="hero__highlight">
             <MotionCustomDiv

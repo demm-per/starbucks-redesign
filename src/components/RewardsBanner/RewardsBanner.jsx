@@ -4,13 +4,13 @@ import BackgroundImage from "../BackgroundImage/BackgroundImage"
 import ContentBox from "../ContentBox/ContentBox";
 import RewardsLogo from "./RewardsLogo";
 
-const MotionRewardsLogo = motion(RewardsLogo);
-const MotionContentBox = motion(ContentBox);
+const MotionRewardsLogo = motion.create(RewardsLogo);
+const MotionContentBox = motion.create(ContentBox);
 
 const RewardsBanner = () => {
     return (
         <section className='rewards'>
-            <BackgroundImage classContainer={'rewards__mask'} urlImage={'/background-rewards.jpg'} classImage={'rewards__mask-img'} altImage={''}/>
+            <BackgroundImage classContainer={'rewards__mask'} urlImage={'/background-rewards.webp'} classImage={'rewards__mask-img'} altImage={''}/>
             <div className='rewards__container'>
                 <MotionRewardsLogo
                     initial={{ opacity: 0, scale:0, }}

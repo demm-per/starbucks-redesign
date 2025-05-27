@@ -6,8 +6,8 @@ import Buttons from './Buttons';
 import ProductLists from './ProductLists';
 import CustomButton from '../CustomButton/CustomButton';
 
-const MotionTitle = motion(Title);
-const MotionButtons = motion(Buttons);
+const MotionTitle = motion.create(Title);
+const MotionButtons = motion.create(Buttons);
 
 const Content = () => {
     return (

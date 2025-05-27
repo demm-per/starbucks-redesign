@@ -125,7 +125,7 @@ const SeasonalShowcase = () => {
 
     return (
         <section className='summer-refresh'>
-            <BackgroundImage classContainer={'summer-refresh__container-images'} urlImage={"/summer-background-4.jpg"} classImage={'summer-refresh__background-image'} altImage={''} />
+            <BackgroundImage classContainer={'summer-refresh__container-images'} urlImage={"/summer-background-4.webp"} classImage={'summer-refresh__background-image'} altImage={''} />
             <div className='summer-refresh__container'>
                 <motion.h2
                     variants={{
@@ -155,11 +155,11 @@ const SeasonalShowcase = () => {
                     <SummerRefreshCard
                         classCard={'summer-refresh__card summer-refresh__berry'}
                         classCardContainerBackgroundImages={'summer-refresh__contain-mask summer-refresh__contain-mask-berry'}
-                        urlBackgroundImageProductFruit={'/background-barry.png'}
+                        urlBackgroundImageProductFruit={'/background-barry.webp'}
                         classBackgroundImageProductFruit={'summer-refresh__mask summer-refresh__mask-berry'}
-                        urlBackgroundImageProductColors={'/background-barry-stain.png'}
+                        urlBackgroundImageProductColors={'/background-barry-stain.webp'}
                         classBackgroundImageProductColors={'summer-refresh__mask summer-refresh__mask-berry-stains'}
-                        urlImageProduct={'/Summer-Berry.png'}
+                        urlImageProduct={'/Summer-Berry.webp'}
                         classImageProduct={'summer-refresh__image-product'}
                         title={'Berry'}
                         fruitVariants={berryVariants}
@@ -170,11 +170,11 @@ const SeasonalShowcase = () => {
                     <SummerRefreshCard
                         classCard={'summer-refresh__card summer__refresh-skies'}
                         classCardContainerBackgroundImages={'summer-refresh__contain-mask summer-refresh__contain-mask-skies'}
-                        urlBackgroundImageProductFruit={'/background-skies.png'}
+                        urlBackgroundImageProductFruit={'/background-skies.webp'}
                         classBackgroundImageProductFruit={'summer-refresh__mask summer-refresh__mask-skies'}
-                        urlBackgroundImageProductColors={'/summer-background-skies.png'}
+                        urlBackgroundImageProductColors={'/summer-background-skies.webp'}
                         classBackgroundImageProductColors={'summer-refresh__mask summer-refresh__mask-skies-stains'}
-                        urlImageProduct={'/Summer-Skies-Drink.png'}
+                        urlImageProduct={'/Summer-Skies-Drink.webp'}
                         classImageProduct={'summer-refresh__image-product'}
                         title={'Skies'}
                         fruitVariants={skiesVariants}
@@ -185,11 +185,11 @@ const SeasonalShowcase = () => {
                     <SummerRefreshCard
                         classCard={'summer-refresh__card summer-refresh__lemonade'}
                         classCardContainerBackgroundImages={'summer-refresh__contain-mask summer-refresh__contain-mask-lemonade'}
-                        urlBackgroundImageProductFruit={'/Summer-Berry-with-Lemonade-background.png'}
+                        urlBackgroundImageProductFruit={'/Summer-Berry-with-Lemonade-background.webp'}
                         classBackgroundImageProductFruit={'summer-refresh__mask summer-refresh__mask-lemonade'}
-                        urlBackgroundImageProductColors={'/mancha_pintura.png'}
+                        urlBackgroundImageProductColors={'/mancha_pintura.webp'}
                         classBackgroundImageProductColors={'summer-refresh__mask summer-refresh__mask-stains'}
-                        urlImageProduct={'/summer-berry-with-lemonade.png'}
+                        urlImageProduct={'/summer-berry-with-lemonade.webp'}
                         classImageProduct={'summer-refresh__image-product'}
                         title={'Lemonade'}
                         fruitVariants={lemonadeVariants}

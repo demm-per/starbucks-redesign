@@ -31,6 +31,7 @@ const Highlight = () => {
                     src="/starbucks-hero.webp"
                     className="hero__highlight-img"
                     alt="Highlight product"
+                    isLazyLoadingEnabled={false}
                 />
             </MotionCustomDiv>
             <MotionCustomDiv 

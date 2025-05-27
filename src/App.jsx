@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from 'react';
 import './css/styles.css';
 import './css/normalice.css';
 
+
 import Hero from './components/Hero';
 import SeasonalShowcase from './components/SeasonalShowcase/SeasonalShowcase';
 import Lavanda from './components/Lavanda/Lavanda';

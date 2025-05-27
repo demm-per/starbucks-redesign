@@ -1,7 +1,7 @@
-const BackgroundImage = ({classContainer, urlImage, classImage, altImage, ...props}) => {
+const BackgroundImage = ({classContainer, isLazyLoadingEnabled = true, urlImage, classImage, altImage, ...props}) => {
   return (
     <div className={classContainer} {...props}>
-        <img loading="lazy" src={urlImage} className={classImage} alt={altImage} />
+        <img loading={isLazyLoadingEnabled ? 'lazy' : 'eager'} src={urlImage} className={classImage} alt={altImage} />
     </div>
   )
 }

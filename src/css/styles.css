@@ -333,9 +333,21 @@ img{
   background: transparent;
   cursor: pointer;
   display: block;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 5rem;
+  right: 4rem;
   z-index: 1;
+}
+
+.burger::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 4rem;
+    height: 4rem;
+    background-color: #043825;
+    border-radius: 5rem;
 }
 
 @media(min-width:992px){
@@ -353,7 +365,7 @@ img{
   position: absolute;
   height: 4px;
   width: 100%;
-  background: black;
+  background: #04a169;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -666,7 +678,7 @@ img{
 
 @media(min-width:992px){
     .hero__highlight-img-container{
-        left: -14rem;
+        left: -12rem;
         height: 27rem;
     }
 }

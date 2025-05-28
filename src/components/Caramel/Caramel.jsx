@@ -19,6 +19,8 @@ const Caramel = () => {
                 classContainer={'container__background-image'}
                 urlImage={'/granos de cafe.webp'}
                 classImage={'caramel__background-image'}
+                height='200'
+                width='300'
                 altImage={'granos de cafe'}
                 variants={{
                     hidden: { opacity: 0, },
@@ -34,6 +36,8 @@ const Caramel = () => {
                     <MotionCustomImage
                         src="/machiato.webp"
                         className='caramel__image'
+                        height='400'
+                        width='270'
                         alt="img-Caramel-Macchiato"
                         variants={{hidden: { opacity: 0, y: -100 },visible: { opacity: 1, y: 0 },}}
                         initial="hidden"
@@ -45,6 +49,8 @@ const Caramel = () => {
                         classContainer={'container__background-image'}
                         urlImage={'/fondo-caramelo.webp'}
                         classImage={'caramel__background-image'}
+                        height='250'
+                        width='400'
                         altImage={'Salpicaduras de Caramelo'}
                         variants={{
                             hidden: { opacity: 0, y: -100, scale:0},

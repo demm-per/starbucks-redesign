@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 import CustomImage from "../CustomImage/CustomImage";
 
-const MotionCustomImage = motion.img;
+const MotionCustomImage = motion.create(CustomImage);
 
 const SummerRefreshCard = ({
     classCard = '',
@@ -25,6 +25,8 @@ const SummerRefreshCard = ({
                 <MotionCustomImage
                     src={urlBackgroundImageProductFruit}
                     className={classBackgroundImageProductFruit}
+                    height='210'
+                    width='100'
                     alt=""
                     variants={fruitVariants}
                     initial="hidden"
@@ -34,6 +36,8 @@ const SummerRefreshCard = ({
                 <MotionCustomImage
                     src={urlBackgroundImageProductColors}
                     className={classBackgroundImageProductColors}
+                    height='150'
+                    width='100'
                     alt=""
                     variants={colorVariants}
                     initial="hidden"
@@ -44,6 +48,8 @@ const SummerRefreshCard = ({
             <MotionCustomImage
                 src={urlImageProduct}
                 className={classImageProduct}
+                height='130'
+                width='100'
                 alt=""
                 variants={productVariants}
                 initial="hidden"

@@ -1,8 +1,10 @@
+import CustomImage from '../CustomImage/CustomImage'
+
 const Card = ({product, ...props}) => {
     return (
         <div className='card' {...props}>
             <div className={product.classContainerImage}>
-                <img src={product.urlImageProduct} className='card__image' alt="" />
+                <CustomImage src={product.urlImageProduct} className='card__image' height="150" width="110" alt="" />
             </div>
             <div className='card__body'>
                 <p className='card__title'>{product.title}</p>

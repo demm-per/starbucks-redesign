@@ -15,12 +15,16 @@ const Banner = () => {
                     <MotionCustomImage
                         src="/background-banner.webp"
                         className='banner__background-image'
+                        height='400'
+                        width='1200'
                         alt="cafeteria"
                     />
 
                     <MotionCustomImage
                         src="/hojas-fondo-removebg.webp"
                         className='banner__background-image ambiente'
+                        height='400'
+                        width='1200'
                         alt="marco de hojas"
                         initial={{ opacity: 0, scale: 1.5 }}
                         whileInView={{ opacity: .7, scale: 1 }}
@@ -32,6 +36,8 @@ const Banner = () => {
                 <MotionCustomImage
                     src="/termo-1.webp"
                     className='banner__background-image termo_1'
+                    height='400'
+                    width='350'
                     alt="termo rosa"
                     initial={{ opacity: 0, y: 100, scale: .8 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -41,6 +47,8 @@ const Banner = () => {
                 <MotionCustomImage
                     src="/termo-2.webp"
                     className='banner__background-image termo_2'
+                    height='400'
+                    width='350'
                     alt="termo verde"
                     initial={{ opacity: 0, y: 100, scale: .5 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}

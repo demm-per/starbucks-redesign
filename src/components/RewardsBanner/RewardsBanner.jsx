@@ -10,7 +10,7 @@ const MotionContentBox = motion.create(ContentBox);
 const RewardsBanner = () => {
     return (
         <section className='rewards'>
-            <BackgroundImage classContainer={'rewards__mask'} urlImage={'/background-rewards.webp'} classImage={'rewards__mask-img'} altImage={''}/>
+            <BackgroundImage classContainer={'rewards__mask'} urlImage={'/background-rewards.webp'} classImage={'rewards__mask-img'} height='400' width='600' altImage={''}/>
             <div className='rewards__container'>
                 <MotionRewardsLogo
                     initial={{ opacity: 0, scale:0, }}

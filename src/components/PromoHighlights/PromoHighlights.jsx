@@ -23,12 +23,16 @@ const PromoHighlights = () => {
             classContainerImage:'info-section__container-image',
             urlBackgroundImage:'/noticias starbucks.webp',
             classBackgroundImage:'info-section__image',
+            height:'400',
+            width:'600',
             altText:'vasos starbucks',
         },
         {
             classContainerImage:'info-section__container-image',
             urlBackgroundImage:'/promociones.webp',
             classBackgroundImage:'info-section__image',
+            height:'400',
+            width:'600',
             altText:'carta de bebidas',
         }
     ]
@@ -41,6 +45,8 @@ const PromoHighlights = () => {
                             classContainer={dataImage.classContainerImage}
                             urlImage={dataImage.urlBackgroundImage}
                             classImage={dataImage.classBackgroundImage}
+                            height={dataImage.height}
+                            width={dataImage.width}
                             altImage={dataImage.altText}
                             key={index}
                         />

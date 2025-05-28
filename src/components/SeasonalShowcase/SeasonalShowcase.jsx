@@ -125,7 +125,7 @@ const SeasonalShowcase = () => {
 
     return (
         <section className='summer-refresh'>
-            <BackgroundImage classContainer={'summer-refresh__container-images'} urlImage={"/summer-background-4.webp"} classImage={'summer-refresh__background-image'} altImage={''} />
+            <BackgroundImage classContainer={'summer-refresh__container-images'} urlImage={"/summer-background-4.webp"} classImage={'summer-refresh__background-image'} height={500} width={1200} altImage={''} />
             <div className='summer-refresh__container'>
                 <motion.h2
                     variants={{

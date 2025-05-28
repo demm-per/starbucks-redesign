@@ -851,7 +851,8 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 9rem;
+    gap: 11rem;
+    margin-top: 13rem;
 }
 
 @media(min-width:768px){
@@ -861,7 +862,7 @@ img{
         gap: 0;
         justify-content: center;
         position: relative;
-        margin-top: 12rem;
+        /* margin-top: 13rem; */
     }
 }
 
@@ -947,24 +948,23 @@ img{
     top: 50%;
     transform: translateX(0rem) translateY(-40%);
     /* background-color: red; */
+    width: 12rem;
+    height: auto;
 }
 
 .summer-refresh__mask-lemonade{
-    width: 12rem;
-    left: 3rem;
+    height: 15rem;
+    width: auto;
+    left: 5rem;
     top: -5rem;
 }
 
 .summer-refresh__mask-stains{
-    left: -4rem;
-    top: 60%;
-    /* transform: translateY(-50%); */
-}
-
-.summer-refresh__mask-stains{
     position: absolute;
-    /* height: 20rem; */
-    /* width: a; */
+    left: -4rem;
+    top: 50%;
+    height: 15rem;
+    width: auto;
     transform: translateY(-9rem);
     z-index: -1;
 }
@@ -1012,12 +1012,14 @@ img{
     }
 
     .summer-refresh__mask-lemonade{
-        width: 11rem;
+        height: 14rem;
+        width: auto;
     }
     
     .summer-refresh__mask-stains{
         position: absolute;
         transform: translateX(5rem) translateY(-8rem);
+        height: 12rem;
         z-index: -1;
     }
 }
@@ -1042,7 +1044,7 @@ img{
 .summer-refresh__body{
     position: absolute;
     width: 100%;
-    top: -7.5rem;
+    top: -8.5rem;
     /* background-color: red; */
     left: 0;
 }

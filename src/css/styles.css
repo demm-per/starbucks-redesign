@@ -3,18 +3,37 @@
 }
 
 @font-face {
-    font-family: 'Angeloy Bartesu';
-    src: url('/src/assets/fonts/Angeloy-Bartesu-DEMO-VERSION-BF67d7bbfb3077b.otf') format('opentype'),
-         url('/src/assets/fonts/Angeloy-Bartesu-DEMO-VERSION-BF67d7bbfb3077b.woff2') format('woff2'),
-         url('/src/assets/fonts/Angeloy-Bartesu-DEMO-VERSION-BF67d7bbfb3077b.woff') format('woff'),
-         url('/src/assets/fonts/Angeloy-Bartesu-DEMO-VERSION-BF67d7bbfb3077b.ttf') format('truetype');
+    font-family: 'Agbalumo';
+    src: url('/src/assets/fonts/Agbalumo-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Angeloy Bartesu';
+    src: url('/src/assets/fonts/Angeloy-Bartesu-DEMO-VERSION-BF67d7bbfb3077b.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/assets/fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+    font-style: normal;
+  }
   
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/src/assets/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+    font-style: italic;
+  }
 
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 *,*::before,*::after{
@@ -1965,7 +1984,7 @@ img{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(247, 247, 247, 0.5);
     z-index: 1;
 }
 

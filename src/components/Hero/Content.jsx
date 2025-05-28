@@ -16,7 +16,7 @@ const Content = () => {
                 <MotionTitle
                     className="hero__title"
                     variants={{
-                        hidden: { opacity: 0, x: -100 },
+                        hidden: { opacity: 1, x: -100 },
                         visible: { opacity: 1, x: 0 },
                     }}
                     initial="hidden"

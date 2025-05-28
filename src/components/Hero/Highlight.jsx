@@ -19,7 +19,7 @@ const Highlight = () => {
                 className="hero__highlight-img-container"
 
                 variants={{
-                    hidden: { opacity: 0, scale: .5 },
+                    hidden: { opacity: 1, scale: .5 },
                     visible: { opacity: 1, scale: 1, y: viewportWidth >= 768 ? '-50%' : '0%' },
                 }}
                 initial="hidden"
@@ -45,6 +45,8 @@ const Highlight = () => {
                         className="hero__highlight-img"
                         alt="Highlight product"
                         isLazyLoadingEnabled={false}
+                        height="200"
+                        width="150"
                     />
                 </picture>
             </MotionCustomDiv>

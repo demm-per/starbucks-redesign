@@ -17,8 +17,8 @@ const index = () => {
                 transition={{ duration: 1.6, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.2 }}
             >
-                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'/dona_starbucks_hero.webp'} classImage={'hero__background-image'} altImage={'dona de vainilla'} />
-                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'/frapuccino_starbucks_hero.webp'} classImage={'hero__background-image'} altImage={'frappuccino'} />
+                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'/dona_starbucks_hero.webp'} classImage={'hero__background-image'} height={100} width={100} altImage={'dona de vainilla'} />
+                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'/frapuccino_starbucks_hero.webp'} classImage={'hero__background-image'} height={100} width={100} altImage={'frappuccino'} />
             </MotionBackgroundImages>
             <div className='hero__container'>
                 <Content />

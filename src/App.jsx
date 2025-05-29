@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, Suspense } from 'react';
 
 import './css/styles.css';
 import './css/normalice.css';
@@ -6,12 +6,13 @@ import './css/normalice.css';
 
 import Hero from './components/Hero';
 import SeasonalShowcase from './components/SeasonalShowcase/SeasonalShowcase';
-import Lavanda from './components/Lavanda/Lavanda';
-import Caramel from './components/Caramel/Caramel';
 
-import Banner from './components/Banner/Banner';
-import RewardsBanner from './components/RewardsBanner/RewardsBanner';
-import PromoHighlights from './components/PromoHighlights/PromoHighlights';
+const Lavanda = React.lazy(() => import('./components/Lavanda/Lavanda'));
+const Caramel = React.lazy(() => import('./components/Caramel/Caramel'));
+const Banner = React.lazy(() => import('./components/Banner/Banner'));
+const RewardsBanner = React.lazy(() => import('./components/RewardsBanner/RewardsBanner'));
+const PromoHighlights = React.lazy(() => import('./components/PromoHighlights/PromoHighlights'));
+
 import { ViewportProvider } from './context/ViewportContext';
 import MainLayout from './layout/MainLayout';
 
@@ -42,19 +43,30 @@ const App = () => {
 
     return (
         <ViewportProvider>
-            <MainLayout 
+            <MainLayout
                 handleCheckboxChange={handleCheckboxChange}
-                navRef = {nav}
-                containerNavRef = {containerNav}
-                btnCheckBoxRef = {btnCheckBox}
+                navRef={nav}
+                containerNavRef={containerNav}
+                btnCheckBoxRef={btnCheckBox}
             >
                 <Hero />
                 <SeasonalShowcase />
-                <Lavanda />
-                <Caramel />
-                <RewardsBanner />
-                <Banner />
-                <PromoHighlights />
+                
+                <Suspense fallback={null}>
+                    <Lavanda />
+                </Suspense>
+                <Suspense fallback={null}>
+                    <Caramel />
+                </Suspense>
+                <Suspense fallback={null}>
+                    <RewardsBanner />
+                </Suspense>
+                <Suspense fallback={null}>
+                    <Banner />
+                </Suspense>
+                <Suspense fallback={null}>
+                    <PromoHighlights />
+                </Suspense>
             </MainLayout>
         </ViewportProvider>
     )

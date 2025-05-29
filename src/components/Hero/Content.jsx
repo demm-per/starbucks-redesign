@@ -1,5 +1,5 @@
 import React from 'react';
-import {motion} from 'motion/react';
+import { motion } from 'motion/react';
 
 import Title from './Title';
 import Buttons from './Buttons';
@@ -13,23 +13,14 @@ const Content = () => {
     return (
         <div className='hero__content'>
             <div className='hero__text'>
-                <MotionTitle
-                    className="hero__title"
-                    variants={{
-                        hidden: { opacity: 1, x: -100 },
-                        visible: { opacity: 1, x: 0 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.2 }}
-                    transition={{ duration: 1.6, ease: "easeOut" }}>
+                <Title className="hero__title">
                     <span className="brand-name-small">STARBUCKS IS...</span>
                     <span className="hero__title-block">
                         PURE <span className="hero__title-highlight-text">LOVE </span><br />
                         OF <span className="hero__title-highlight-text">COFFEE</span>
                     </span>
-                </MotionTitle>
-                <MotionButtons 
+                </Title>
+                <MotionButtons
                     className='hero__container-buttons'
                     variants={{
                         hidden: { opacity: 0, y: 140 },
@@ -54,7 +45,7 @@ const Content = () => {
                     </CustomButton>
                 </MotionButtons>
             </div>
-            <ProductLists/>
+            <ProductLists />
         </div>
     )
 }

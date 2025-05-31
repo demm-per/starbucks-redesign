@@ -125,7 +125,7 @@ const SeasonalShowcase = () => {
 
     return (
         <section className='summer-refresh'>
-            <BackgroundImage classContainer={'summer-refresh__container-images'} urlImage={"/summer-background-4.webp"} classImage={'summer-refresh__background-image'} height={500} width={1200} altImage={''} />
+            <BackgroundImage classContainer={'summer-refresh__container-images'} urlImage={"https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/ncr3bv9e5nu9oyn7ydt6"} classImage={'summer-refresh__background-image'} height={500} width={1200} altImage={''} />
             <div className='summer-refresh__container'>
                 <motion.h2
                     variants={{
@@ -155,11 +155,11 @@ const SeasonalShowcase = () => {
                     <SummerRefreshCard
                         classCard={'summer-refresh__card summer-refresh__berry'}
                         classCardContainerBackgroundImages={'summer-refresh__contain-mask summer-refresh__contain-mask-berry'}
-                        urlBackgroundImageProductFruit={'/background-barry.webp'}
+                        urlBackgroundImageProductFruit={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/jrqgjw7hrx2jfhiwizth'}
                         classBackgroundImageProductFruit={'summer-refresh__mask summer-refresh__mask-berry'}
-                        urlBackgroundImageProductColors={'/background-barry-stain.webp'}
+                        urlBackgroundImageProductColors={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/nhlvocv2ai5pyteyzzhf'}
                         classBackgroundImageProductColors={'summer-refresh__mask summer-refresh__mask-berry-stains'}
-                        urlImageProduct={'/Summer-Berry.webp'}
+                        urlImageProduct={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/kkwenf5cymcvajoecapi'}
                         classImageProduct={'summer-refresh__image-product'}
                         title={'Berry'}
                         fruitVariants={berryVariants}
@@ -170,11 +170,11 @@ const SeasonalShowcase = () => {
                     <SummerRefreshCard
                         classCard={'summer-refresh__card summer__refresh-skies'}
                         classCardContainerBackgroundImages={'summer-refresh__contain-mask summer-refresh__contain-mask-skies'}
-                        urlBackgroundImageProductFruit={'/background-skies.webp'}
+                        urlBackgroundImageProductFruit={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/eq84rozecfz3bscxrshh'}
                         classBackgroundImageProductFruit={'summer-refresh__mask summer-refresh__mask-skies'}
-                        urlBackgroundImageProductColors={'/summer-background-skies.webp'}
+                        urlBackgroundImageProductColors={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/dojzws1yt6hzcgopmedj'}
                         classBackgroundImageProductColors={'summer-refresh__mask summer-refresh__mask-skies-stains'}
-                        urlImageProduct={'/Summer-Skies-Drink.webp'}
+                        urlImageProduct={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/ylmi4hde29ibwvm1t08k'}
                         classImageProduct={'summer-refresh__image-product'}
                         title={'Skies'}
                         fruitVariants={skiesVariants}
@@ -185,11 +185,11 @@ const SeasonalShowcase = () => {
                     <SummerRefreshCard
                         classCard={'summer-refresh__card summer-refresh__lemonade'}
                         classCardContainerBackgroundImages={'summer-refresh__contain-mask summer-refresh__contain-mask-lemonade'}
-                        urlBackgroundImageProductFruit={'/Summer-Berry-with-Lemonade-background.webp'}
+                        urlBackgroundImageProductFruit={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/ltukvo8jssyvd9jedtqf'}
                         classBackgroundImageProductFruit={'summer-refresh__mask summer-refresh__mask-lemonade'}
-                        urlBackgroundImageProductColors={'/mancha_pintura.webp'}
+                        urlBackgroundImageProductColors={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/qolqjiqdahp7068jw6sx'}
                         classBackgroundImageProductColors={'summer-refresh__mask summer-refresh__mask-stains'}
-                        urlImageProduct={'/summer-berry-with-lemonade.webp'}
+                        urlImageProduct={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/i8lngz7z9kptstwejcof'}
                         classImageProduct={'summer-refresh__image-product'}
                         title={'Lemonade'}
                         fruitVariants={lemonadeVariants}

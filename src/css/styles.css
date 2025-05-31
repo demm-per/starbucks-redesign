@@ -606,7 +606,7 @@ img{
 }
 
 .hero__product::before{ 
-    background-image: url(/background-product-hero.webp);
+    background-image: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/kjhnwfbbbcfgny4vpwvf);
     background-repeat: no-repeat;
     background-size: 10rem;
     border-radius: 1rem;
@@ -750,7 +750,7 @@ img{
     height:100% ;
     width: 100%;
     transform: rotate(180deg);
-    background-image: url(/store-starbucks.webp);
+    background-image: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/xw1kotpssdzue6zi0bzl);
     border-top-left-radius: 2rem;
     background-size: cover;
     z-index: -2;
@@ -1118,7 +1118,7 @@ img{
     height: 100%;
     top: 0;
     left: 0;
-    background: url(/background-image-section.webp);
+    background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/rqbkjhu7nknxa56th0en);
     background-repeat: no-repeat;
     background-size: cover;
     /* filter: blur(.1rem); */
@@ -1250,7 +1250,7 @@ img{
 
 .card{
     position: relative;
-    background: url(/background-image-card.webp);
+    background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/jz7ltutjk5jgzmqjjorv);
     border-radius: 1rem;
     padding: 1rem;
     width: 15rem;
@@ -1332,7 +1332,7 @@ img{
     left: -20%;
     height: 140%;
     width: 140%;
-    background: url(/Iced-Lavanda-Matcha-bg.webp);
+    background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/bwy5obu36f2lsd8gm5oy);
     background-repeat: no-repeat;
     background-size: 17rem, 80%, 80%;
     background-position: center, center;
@@ -1346,7 +1346,7 @@ img{
     left: -20%;
     height: 140%;
     width: 140%;
-    background: url(/Iced-Lavanda-Velvet-Latte-bg.webp);
+    background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/hukjcuveolmrtzhjmtr3);
     background-repeat: no-repeat;
     background-size: 17rem, 80%, 80%;
     background-position: center, center;
@@ -1360,7 +1360,7 @@ img{
     left: -20%;
     height: 140%;
     width: 140%;
-    background: url(/LavandaCream-Frappucciono-bg.webp);
+    background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/yxv66rqljkerbkybya10);
     background-repeat: no-repeat;
     background-size: 15.5rem, 80%, 80%;
     background-position: center, center;
@@ -1436,7 +1436,7 @@ img{
 }
 
 .caramel::before{
-    background: url(/background-mochiato.jpg)no-repeat;
+    background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/cqqag572fowkkr3wtzhm)no-repeat;
     background-size: cover;
     z-index: 1;
 }
@@ -1983,7 +1983,7 @@ img{
 /* START FOOTER */
 .footer{
     /* margin-top: 5rem; */
-    background: url(/background-footer.webp) no-repeat;
+    background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/dktzdyyzzwwmjyi3ipxe) no-repeat;
     background-size: cover;
     position: relative;
 }

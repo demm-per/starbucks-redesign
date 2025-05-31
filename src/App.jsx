@@ -52,21 +52,21 @@ const App = () => {
                 <Hero />
                 <SeasonalShowcase />
                 
-                <Suspense fallback={null}>
-                    <Lavanda />
-                </Suspense>
-                <Suspense fallback={null}>
-                    <Caramel />
-                </Suspense>
-                <Suspense fallback={null}>
-                    <RewardsBanner />
-                </Suspense>
-                <Suspense fallback={null}>
-                    <Banner />
-                </Suspense>
-                <Suspense fallback={null}>
-                    <PromoHighlights />
-                </Suspense>
+                    <Suspense fallback={null}>
+                        <Lavanda />
+                    </Suspense>
+                    <Suspense fallback={null}>
+                        <Caramel />
+                    </Suspense>
+                    <Suspense fallback={null}>
+                        <RewardsBanner />
+                    </Suspense>
+                    <Suspense fallback={null}>
+                        <Banner />
+                    </Suspense>
+                    <Suspense fallback={null}>
+                        <PromoHighlights />
+                    </Suspense>
             </MainLayout>
         </ViewportProvider>
     )

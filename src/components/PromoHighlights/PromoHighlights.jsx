@@ -21,7 +21,7 @@ const PromoHighlights = () => {
     const backgroundImageCard = [
         {
             classContainerImage:'info-section__container-image',
-            urlBackgroundImage:'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/hflfgc1hcobyzzhxz6ft',
+            urlBackgroundImage:'/noticias starbucks.webp',
             classBackgroundImage:'info-section__image',
             height:'400',
             width:'600',
@@ -29,7 +29,7 @@ const PromoHighlights = () => {
         },
         {
             classContainerImage:'info-section__container-image',
-            urlBackgroundImage:'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/m6suzw7ozlkrv1ihkltd',
+            urlBackgroundImage:'/promociones.webp',
             classBackgroundImage:'info-section__image',
             height:'400',
             width:'600',

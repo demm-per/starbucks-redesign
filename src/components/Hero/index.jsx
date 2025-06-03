@@ -17,8 +17,8 @@ const index = () => {
                 transition={{ duration: 1.6, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.2 }}
             >
-                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/pffemn52c1rx7fqza4jz'} classImage={'hero__background-image'} height={100} width={100} altImage={'dona de vainilla'} />
-                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/i6qai4hnyjj76vdifffd'} classImage={'hero__background-image'} height={100} width={100} altImage={'frappuccino'} />
+                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'/dona_starbucks_hero.webp'} classImage={'hero__background-image'} height={100} width={100} altImage={'dona de vainilla'} />
+                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'/frapuccino_starbucks_hero.webp'} classImage={'hero__background-image'} height={100} width={100} altImage={'frappuccino'} />
             </MotionBackgroundImages>
             <div className='hero__container'>
                 <Content />

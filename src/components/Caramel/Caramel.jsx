@@ -17,7 +17,7 @@ const Caramel = () => {
         <section className='caramel'>
             <MotionBackgroundImage
                 classContainer={'container__background-image'}
-                urlImage={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/wgwih5rlftktlu07vnhb'}
+                urlImage={'/granos de cafe.webp'}
                 classImage={'caramel__background-image'}
                 height='200'
                 width='300'
@@ -34,7 +34,7 @@ const Caramel = () => {
             <div className='caramel__container'>
                 <div className='caramel__container-image'>
                     <MotionCustomImage
-                        src="https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/n854qgkjrvsdwyxud9hu"
+                        src="/machiato.webp"
                         className='caramel__image'
                         height='400'
                         width='270'
@@ -47,7 +47,7 @@ const Caramel = () => {
                     />
                     <MotionBackgroundImage
                         classContainer={'container__background-image'}
-                        urlImage={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/pq3kqv0edpgvrcaxoji4'}
+                        urlImage={'/fondo-caramelo.webp'}
                         classImage={'caramel__background-image'}
                         height='250'
                         width='400'

@@ -13,7 +13,7 @@ const Banner = () => {
             <div className='banner__mask-container'>
                 <CustomDiv className="banner__mask">
                     <MotionCustomImage
-                        src="https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/fkbfhcjk5gg3guqsyom4"
+                        src="/background-banner.webp"
                         className='banner__background-image'
                         height='400'
                         width='1200'
@@ -21,7 +21,7 @@ const Banner = () => {
                     />
 
                     <MotionCustomImage
-                        src="https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/nmmeoxt98omr3phu0jky"
+                        src="/hojas-fondo-removebg.webp"
                         className='banner__background-image ambiente'
                         height='400'
                         width='1200'
@@ -34,7 +34,7 @@ const Banner = () => {
 
                 </CustomDiv>
                 <MotionCustomImage
-                    src="https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/e0sjgzyyr88lhw2lhhct"
+                    src="/termo-1.webp"
                     className='banner__background-image termo_1'
                     height='400'
                     width='350'
@@ -45,7 +45,7 @@ const Banner = () => {
                     viewport={{ once: true, amount: .5 }}
                 />
                 <MotionCustomImage
-                    src="https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/ay1nr5mxrpqfcyrwkzvw"
+                    src="/termo-2.webp"
                     className='banner__background-image termo_2'
                     height='400'
                     width='350'

@@ -10,19 +10,19 @@ const Cards = () => {
     const products = [ 
         {
             classContainerImage:'card__container_image matcha',
-            urlImageProduct:'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/dxzdpt3wqea09zkkbxk8',
+            urlImageProduct:'/Iced-Lavanda-Matcha-Latte-STARBUCKS-PRIMAVERA.webp',
             title:'Iced Lavanda Matcha Latte',
             description:'Suave, elegante y refrescante.'
         },
         {
             classContainerImage:'card__container_image velvet',
-            urlImageProduct:'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/q6cak38nj9ynrcuabgml',
+            urlImageProduct:'/Iced-Lavanda-Velvet-Latte-STARBUCKS-PRIMAVERA.webp',
             title:'Iced Lavanda Velvet Latte',
             description:'Cremoso, dulce y aromático.'
         },
         {
             classContainerImage:'card__container_image cream-frappucciono',
-            urlImageProduct:'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/bsblypksb755kuhre34d',
+            urlImageProduct:'/Lavanda-Cream-Frappucciono-STARBUCKS-PRIMAVERA.webp',
             title:'Lavanda Cream Frappucciono',
             description:'Suave, elegante y refrescante.'
         }

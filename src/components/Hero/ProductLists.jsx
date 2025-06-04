@@ -7,8 +7,8 @@ const MotionProductCard = motion.create(ProductCard);
 
 const ProductLists = () => {
     const products = [
-        { img: "/starbucks-hero-product-1.webp", text: "Frappuccino de fresa", height:"50", width:"40", alt:"" },
-        { img: "/starbucks-hero-product-2.webp", text: "Frappuccino de cereza", height:"50", width:"40", alt:"" },
+        { img: "https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1/starbucks/xj1hflnrvreainiq5qdn", text: "Frappuccino de fresa", height:"50", width:"40", alt:"" },
+        { img: "https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1/starbucks/bfzfx8i1qxc6hu3w0non", text: "Frappuccino de cereza", height:"50", width:"40", alt:"" },
       ];
     return (
         <CustomList className='hero__products'>

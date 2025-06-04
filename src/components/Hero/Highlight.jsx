@@ -27,28 +27,15 @@ const Highlight = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 1.4, ease: "easeOut" }}
             >
-                <picture>
-                    <source
-                        media="(max-width: 767px)"
-                        srcSet="/starbucks-hero-250.webp"
-                        width="400"
-                        height="250"
-                    />
-                    <source
-                        media="(min-width: 768px)"
-                        srcSet="/starbucks-hero.webp"
-                        width="800"
-                        height="500"
-                    />
-                    <CustomImage
-                        src="/starbucks-hero.webp"
-                        className="hero__highlight-img"
-                        alt="Highlight product"
-                        isLazyLoadingEnabled={false}
-                        height="200"
-                        width="150"
-                    />
-                </picture>
+
+                <CustomImage
+                    src="https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1/starbucks/cjiuuivzsvfbtenfliox"
+                    className="hero__highlight-img"
+                    alt="Highlight product"
+                    isLazyLoadingEnabled={false}
+                    height="200"
+                    width="150"
+                />
             </MotionCustomDiv>
             <MotionCustomDiv
                 className="hero__highlight-info"

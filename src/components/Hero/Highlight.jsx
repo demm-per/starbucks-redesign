@@ -2,12 +2,14 @@ import { useContext, useRef } from 'react';
 import { motion, scale } from 'framer-motion';
 
 import CustomDiv from '../CustomDiv/CustomDiv';
-import CustomImage from '../CustomImage/CustomImage';
 import { ViewportContext } from '../../context/ViewportContext';
 import CustomParagraph from '../CustomParagraph/CustomParagraph';
 
 const MotionCustomDiv = motion.create(CustomDiv);
 const MotionCustomParagraph = motion.create(CustomParagraph);
+
+import ResponsiveImageByWidth from '../ResponsiveImageByWidth/ResponsiveImageByWidth';
+import { HighlightImage } from './DataHero';
 
 const Highlight = () => {
 
@@ -27,14 +29,14 @@ const Highlight = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 1.4, ease: "easeOut" }}
             >
-
-                <CustomImage
-                    src="https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1/starbucks/cjiuuivzsvfbtenfliox"
-                    className="hero__highlight-img"
-                    alt="Highlight product"
-                    isLazyLoadingEnabled={false}
-                    height="200"
-                    width="150"
+                <ResponsiveImageByWidth
+                    className={HighlightImage.className}
+                    imageId={HighlightImage.imageId}
+                    publicFolder={HighlightImage.publicFolder}
+                    alt={HighlightImage.alt}
+                    widths={HighlightImage.widths}
+                    sizeRules={HighlightImage.sizeRules}
+                    isLazyLoadingEnabled={HighlightImage.isLazyLoadingEnabled}
                 />
             </MotionCustomDiv>
             <MotionCustomDiv

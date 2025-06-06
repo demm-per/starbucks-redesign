@@ -1,13 +1,17 @@
 import { motion } from "framer-motion";
-import BackgroundImage from "../BackgroundImage/BackgroundImage";
+
 import CustomSection from "../CustomSection/CustomSection";
 import BackgroundImages from "./BackgroundImages";
 import Content from "./Content";
 import Highlight from './Highlight';
+import CustomDiv from "../CustomDiv/CustomDiv";
+import ResponsiveImageByWidth from "../ResponsiveImageByWidth/ResponsiveImageByWidth";
+
+import { heroDecorativeImages } from './DataHero';
 
 const MotionBackgroundImages = motion.create(BackgroundImages);
-
 const index = () => {
+
     return (
         <CustomSection className='hero'>
             <MotionBackgroundImages
@@ -17,8 +21,23 @@ const index = () => {
                 transition={{ duration: 1.6, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.2 }}
             >
-                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1/starbucks/pffemn52c1rx7fqza4jz'} classImage={'hero__background-image'} height={100} width={100} altImage={'dona de vainilla'} />
-                <BackgroundImage classContainer={'hero__background-container-image'} isLazyLoadingEnabled={false} urlImage={'https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1/starbucks/i6qai4hnyjj76vdifffd'} classImage={'hero__background-image'} height={100} width={100} altImage={'frappuccino'} />
+                {
+                    heroDecorativeImages.map((image, index) => (
+                        <CustomDiv className="hero__background-container-image" key={index}>
+                            <ResponsiveImageByWidth
+                                className={image.className}
+                                imageId={image.imageId}
+                                publicFolder={image.publicFolder}
+                                alt={image.alt}
+                                widths={image.widths}
+                                sizeRules={image.sizeRules}
+                                isLazyLoadingEnabled={image.isLazyLoadingEnabled}
+                                width={160}
+                                height={160}
+                            />
+                        </CustomDiv>
+                    ))
+                }
             </MotionBackgroundImages>
             <div className='hero__container'>
                 <Content />

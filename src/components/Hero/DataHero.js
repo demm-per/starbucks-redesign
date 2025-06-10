@@ -1,14 +1,14 @@
 export const heroDecorativeImages = [
-  {
-    className: "hero__background-image",
-    imageId: "pffemn52c1rx7fqza4jz",
-    publicFolder: "starbucks",
-    alt: "Dona de vainilla",
-    widths: [80, 160, 300],
-    sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 160px, (max-width: 1200px) 300px",
-    isLazyLoadingEnabled:false,
-    isFetchpriority:true,
-  },
+  // {
+  //   className: "hero__background-image",
+  //   imageId: "pffemn52c1rx7fqza4jz",
+  //   publicFolder: "starbucks",
+  //   alt: "Dona de vainilla",
+  //   widths: [80, 160, 300],
+  //   sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 160px, (max-width: 1200px) 300px",
+  //   isLazyLoadingEnabled:false,
+  //   isFetchpriority:true,
+  // },
   {
     className: "hero__background-image",
     imageId: "i6qai4hnyjj76vdifffd",

@@ -32,6 +32,7 @@ const index = () => {
                                 widths={image.widths}
                                 sizeRules={image.sizeRules}
                                 isLazyLoadingEnabled={image.isLazyLoadingEnabled}
+                                isFetchpriority={image.isFetchpriority}
                                 width={160}
                                 height={160}
                             />

@@ -6,7 +6,8 @@ export const heroDecorativeImages = [
     alt: "Dona de vainilla",
     widths: [80, 160, 300],
     sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 160px, (max-width: 1200px) 300px",
-    isLazyLoadingEnabled:false
+    isLazyLoadingEnabled:false,
+    isFetchpriority:true,
   },
   {
     className: "hero__background-image",
@@ -15,7 +16,8 @@ export const heroDecorativeImages = [
     alt: "frappuccino",
     widths: [80, 160, 300],
     sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 160px, (max-width: 1200px) 300px",
-    isLazyLoadingEnabled:false
+    isLazyLoadingEnabled:false,
+    isFetchpriority:true,
   },
 ];
 

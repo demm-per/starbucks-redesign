@@ -26,7 +26,6 @@ const ResponsiveImageByWidth = ({
             return `${baseUrl}/w_${width},f_auto,q_auto/v1/${path} ${resolution}w`;
         })
         .join(',\n');
-        console.log(srcSet)
 
     const fallbackWidth = widths[widths.length - 1];
     return (

@@ -37,6 +37,7 @@ const Highlight = () => {
                     widths={HighlightImage.widths}
                     sizeRules={HighlightImage.sizeRules}
                     isLazyLoadingEnabled={HighlightImage.isLazyLoadingEnabled}
+                    isFetchpriority={HighlightImage.isFetchpriority}
                     height={250}
                     width={250}
                 />

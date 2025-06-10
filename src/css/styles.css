@@ -596,7 +596,7 @@ img{
     padding: 1rem;
 }
 
-.hero__product::before, .hero__product::after {
+.hero__product::after {
     content: '';
     position: absolute;
     top: 0;
@@ -605,13 +605,13 @@ img{
     width: 100%;
 }
 
-.hero__product::before{ 
+/* .hero__product::before{ 
     background-image: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/kjhnwfbbbcfgny4vpwvf);
     background-repeat: no-repeat;
     background-size: 10rem;
     border-radius: 1rem;
     z-index: 1;
-}
+} */
 
 .hero__product::after {
     background-color: rgba(0,32,33,.90); 
@@ -622,6 +622,21 @@ img{
 
 .hero__product:hover::after {
     background-color: rgba(0,32,33,.70); 
+    border-radius: 1rem;
+}
+
+.hero__product-containerBackgroundImages{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero__product-BackgroundImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 1rem;
 }
 
@@ -1172,8 +1187,6 @@ img{
     top: 0;
     width: 100%;
     height: 100%;
-    /* background :url(https://i.pinimg.com/736x/ad/e2/10/ade2101db53fe66867b28f8c7e1d176d.jpg) no-repeat;
-    background-size: cover; */
 }
 
 .section__header{
@@ -1276,7 +1289,6 @@ img{
 
 .card:nth-child(2){
     grid-row: 1/2;
-    /* background: url(https://i.pinimg.com/736x/50/c4/0b/50c40bd5fb025c70246f314a0458ade7.jpg); */
 }
 
 .card:nth-child(2)::before{
@@ -1980,8 +1992,8 @@ img{
 /* START FOOTER */
 .footer{
     /* margin-top: 5rem; */
-    background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/dktzdyyzzwwmjyi3ipxe) no-repeat;
-    background-size: cover;
+    /* background: url(https://res.cloudinary.com/dj5mpbo6m/image/upload/f_auto,q_auto/v1/starbucks/dktzdyyzzwwmjyi3ipxe) no-repeat;
+    background-size: cover; */
     position: relative;
 }
 
@@ -1992,6 +2004,20 @@ img{
     width: 100%;
     background-color: rgba(247, 247, 247, 0.5);
     z-index: 1;
+}
+
+.footer__containerBackgroundImage{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.footer__backgroundImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer__container{

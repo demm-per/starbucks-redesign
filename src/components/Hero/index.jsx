@@ -38,7 +38,7 @@ const index = () => {
                             />
                         </CustomDiv>
                     ))
-                }
+                } 
             </MotionBackgroundImages>
             <div className='hero__container'>
                 <Content />

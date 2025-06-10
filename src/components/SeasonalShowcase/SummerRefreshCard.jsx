@@ -1,70 +1,66 @@
 import { motion } from 'framer-motion';
 
 import CustomImage from "../CustomImage/CustomImage";
+import ResponsiveImageByWidth from '../ResponsiveImageByWidth/ResponsiveImageByWidth';
 
-const MotionCustomImage = motion.create(CustomImage);
-
-const SummerRefreshCard = ({
-    classCard = '',
-    classCardContainerBackgroundImages = '',
-    urlBackgroundImageProductFruit = '',
-    classBackgroundImageProductFruit = '',
-    urlBackgroundImageProductColors = '',
-    classBackgroundImageProductColors = '',
-    urlImageProduct = '',
-    classImageProduct = '',
-    title = '',
-    fruitVariants='',
-    colorVariants='',
-    productVariants='',
-    titleVariants='',
-}) => {
+const SummerRefreshCard = ({ product, ...props }) => {
     return (
-        <div className={classCard}>
-            <div className={classCardContainerBackgroundImages}>
-                <MotionCustomImage
-                    src={urlBackgroundImageProductFruit}
-                    className={classBackgroundImageProductFruit}
+        <div className={product.classCard}>
+            <div className={product.classCardContainerBackgroundImages}>
+                <ResponsiveImageByWidth
+                    imageId={product.urlBackgroundImageProductFruit}
+                    className={product.classBackgroundImageProductFruit}
                     height='210'
                     width='100'
-                    alt=""
-                    variants={fruitVariants}
+                    alt={product.alt}
+                    widths={[130]}
+                    publicFolder='starbucks'
+                    sizeRules="(max-width: 480px) 80px, (max-width: 768px) 200px,"
+                    variants={product.fruitVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
                 />
-                <MotionCustomImage
-                    src={urlBackgroundImageProductColors}
-                    className={classBackgroundImageProductColors}
-                    height='150'
+
+                <ResponsiveImageByWidth
+                    imageId={product.urlBackgroundImageProductColors}
+                    className={product.classBackgroundImageProductColors}
+                    height='210'
                     width='100'
-                    alt=""
-                    variants={colorVariants}
+                    alt={product.alt}
+                    widths={[80,160,300]}
+                    publicFolder='starbucks'
+                    sizeRules="(max-width: 480px) 80px, (max-width: 768px) 160px,240px"
+                    variants={product.colorVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
                 />
             </div>
-            <MotionCustomImage
-                src={urlImageProduct}
-                className={classImageProduct}
-                height='130'
+            <ResponsiveImageByWidth
+                imageId={product.urlImageProduct}
+                className={product.classImageProduct}
+                height='210'
                 width='100'
-                alt=""
-                variants={productVariants}
+                alt={product.alt}
+                widths={[80, 160, 350]}
+                publicFolder='starbucks'
+                sizeRules='(max-width: 480px) 80px, (max-width: 768px) 160px, 200px'
+                variants={product.productVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.5 }}
             />
+
             <div className='summer-refresh__body'>
                 <motion.p
                     className='summer-refresh__product-title'
-                    variants={titleVariants}
+                    variants={product.titleVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    {title}
+                    {product.title}
                 </motion.p>
             </div>
         </div>

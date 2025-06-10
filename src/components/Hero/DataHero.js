@@ -4,8 +4,8 @@ export const heroDecorativeImages = [
     imageId: "pffemn52c1rx7fqza4jz",
     publicFolder: "starbucks",
     alt: "Dona de vainilla",
-    widths: [80, 160, 320],
-    sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 480px",
+    widths: [80, 160, 300],
+    sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 160px, (max-width: 1200px) 300px",
     isLazyLoadingEnabled:false
   },
   {
@@ -13,8 +13,8 @@ export const heroDecorativeImages = [
     imageId: "i6qai4hnyjj76vdifffd",
     publicFolder: "starbucks",
     alt: "frappuccino",
-    widths: [96, 160, 240],
-    sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 480px",
+    widths: [80, 160, 300],
+    sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 160px, (max-width: 1200px) 300px",
     isLazyLoadingEnabled:false
   },
 ];
@@ -54,7 +54,7 @@ export const HighlightImage =
         publicFolder: "starbucks",
         alt: "Highlight product",
         widths: [80, 160, 320],
-        sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 480px",
+    sizeRules: "(max-width: 480px) 80px, (max-width: 768px) 160px, (max-width: 1200px) 320px",
         isLazyLoadingEnabled:false,
         width:'150',
         height:'150',

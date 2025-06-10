@@ -37,6 +37,8 @@ const Highlight = () => {
                     widths={HighlightImage.widths}
                     sizeRules={HighlightImage.sizeRules}
                     isLazyLoadingEnabled={HighlightImage.isLazyLoadingEnabled}
+                    height={250}
+                    width={250}
                 />
             </MotionCustomDiv>
             <MotionCustomDiv

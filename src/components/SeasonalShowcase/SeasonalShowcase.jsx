@@ -1,29 +1,17 @@
 import { useContext } from 'react';
-import {motion} from 'framer-motion'
+import { motion, scale } from 'framer-motion';
 
-import BackgroundImage from "../BackgroundImage/BackgroundImage"
-import SummerRefreshCard from "./SummerRefreshCard"
+import SummerRefreshCard from "./SummerRefreshCard";
 
 import { ViewportContext } from '../../context/ViewportContext';
+import ResponsiveImageByWidth from '../ResponsiveImageByWidth/ResponsiveImageByWidth';
+import CustomDiv from '../CustomDiv/CustomDiv';
+
+import { backgroundImageSummer } from './DataSummerRefresh';
 
 
 const SeasonalShowcase = () => {
     const { viewportWidth } = useContext(ViewportContext);
-
-    // OPTION
-    // const products = [
-    //     {
-    //         classCard:'',
-    //         classCardContainerBackgroundImages:'',
-    //         urlBackgroundImageProductFruit:'',
-    //         classBackgroundImageProductFruit:'',
-    //         urlBackgroundImageProductColors:'',
-    //         classBackgroundImageProductColors:'',
-    //         urlImageProduct:'',
-    //         classImageProduct:'',
-    //         title
-    //     }
-    // ]
 
     // BERRYS
     const berryVariants = viewportWidth >= 768 ? {
@@ -31,15 +19,15 @@ const SeasonalShowcase = () => {
         visible: { opacity: 1, y: -120, scale: 1.1, transition: { duration: 1, } },
     } : {
         hidden: { opacity: 0, y: 100, scale: 0.5 },
-        visible: { opacity: 1, y: -150, scale: 0.8, transition: { duration: 1, } },
+        visible: { opacity: 1, y: -80, scale: 1.3, x:100, transition: { duration: 1, } },
     };
 
     const stainVariants = viewportWidth >= 768 ? {
         hidden: { opacity: 0, y: -350, x: 0, scale: 0.8 },
-        visible: { opacity: 1, y: -250, x: 0, scale: 1, transition: { duration: 1.2, } },
+        visible: { opacity: 1, y: -270, x: 0, scale: 1.1, transition: { duration: 1.2, } },
     } : {
         hidden: { opacity: 0, y: -350, x: 0, scale: 0.8 },
-        visible: { opacity: 1, y: -350, x: -90, scale: 1.2, transition: { duration: 1.2, } },
+        visible: { opacity: 1, y: -200, x: -90, scale: 1.2, transition: { duration: 1.2, } },
     };
 
     const productVariants = viewportWidth >= 768 ? {
@@ -67,7 +55,7 @@ const SeasonalShowcase = () => {
 
     const skiesStainVariants = viewportWidth >= 768 ? {
         hidden: { opacity: 0, y: -350, scale: 0.0, },
-        visible: { opacity: 1, y: -160, x: 50, scale: 1.8, transition: { duration: 1.2 } },
+        visible: { opacity: 1, y: -200, x: 60, scale: 2, transition: { duration: 1.2 } },
     } :
         {
             hidden: { opacity: 0, y: -350, scale: 0.0, },
@@ -123,9 +111,74 @@ const SeasonalShowcase = () => {
         visible: { opacity: 1, x: 0, transition: { duration: 0.8, } },
     };
 
+    const products = [
+        {
+            classCard: "summer-refresh__card summer-refresh__berry",
+            classCardContainerBackgroundImages:
+                "summer-refresh__contain-mask summer-refresh__contain-mask-berry",
+            urlBackgroundImageProductFruit: "jrqgjw7hrx2jfhiwizth",
+            classBackgroundImageProductFruit:
+                "summer-refresh__mask summer-refresh__mask-berry",
+            urlBackgroundImageProductColors: "nhlvocv2ai5pyteyzzhf",
+            classBackgroundImageProductColors:
+                "summer-refresh__mask summer-refresh__mask-berry-stains",
+            urlImageProduct: "kkwenf5cymcvajoecapi",
+            classImageProduct: "summer-refresh__image-product",
+            title: "Berry",
+            fruitVariants: berryVariants,
+            colorVariants: stainVariants,
+            productVariants: productVariants,
+            titleVariants: titleVariants,
+        },
+        {
+            classCard: "summer-refresh__card summer__refresh-skies",
+            classCardContainerBackgroundImages: "summer-refresh__contain-mask summer-refresh__contain-mask-skies",
+            urlBackgroundImageProductFruit: "eq84rozecfz3bscxrshh",
+            classBackgroundImageProductFruit: "summer-refresh__mask summer-refresh__mask-skies",
+            urlBackgroundImageProductColors: "dojzws1yt6hzcgopmedj",
+            classBackgroundImageProductColors: "summer-refresh__mask summer-refresh__mask-skies-stains",
+            urlImageProduct: "ylmi4hde29ibwvm1t08k",
+            classImageProduct: "summer-refresh__image-product",
+            title: "Skies",
+            fruitVariants: skiesVariants,
+            colorVariants: skiesStainVariants,
+            productVariants: skiesProductVariants,
+            titleVariants: skiesTitleVariants,
+        },
+        {
+            classCard: 'summer-refresh__card summer-refresh__lemonade',
+            classCardContainerBackgroundImages: 'summer-refresh__contain-mask summer-refresh__contain-mask-lemonade',
+            urlBackgroundImageProductFruit: 'ltukvo8jssyvd9jedtqf',
+            classBackgroundImageProductFruit: 'summer-refresh__mask summer-refresh__mask-lemonade',
+            urlBackgroundImageProductColors: 'qolqjiqdahp7068jw6sx',
+            classBackgroundImageProductColors: 'summer-refresh__mask summer-refresh__mask-stains',
+            urlImageProduct: 'i8lngz7z9kptstwejcof',
+            classImageProduct: 'summer-refresh__image-product',
+            title: 'Lemonade',
+            fruitVariants: lemonadeVariants,
+            colorVariants: lemonadeStainVariants,
+            productVariants: lemonadeProductVariants,
+            titleVariants: LemonadeTitleVariants,
+        },
+    ];
+
+
     return (
         <section className='summer-refresh'>
-            <BackgroundImage classContainer={'summer-refresh__container-images'} urlImage={"/summer-background-4.webp"} classImage={'summer-refresh__background-image'} height={500} width={1200} altImage={''} />
+            <CustomDiv className="summer-refresh__container-images">
+                <ResponsiveImageByWidth
+                    className={backgroundImageSummer.className}
+                    imageId={backgroundImageSummer.imageId}
+                    publicFolder={backgroundImageSummer.publicFolder}
+                    alt={backgroundImageSummer.alt}
+                    widths={backgroundImageSummer.widths}
+                    sizeRules={backgroundImageSummer.sizeRules}
+                    isLazyLoadingEnabled={backgroundImageSummer.isLazyLoadingEnabled}
+                    width={160}
+                    height={160}
+                />
+            </CustomDiv>
+
             <div className='summer-refresh__container'>
                 <motion.h2
                     variants={{
@@ -152,7 +205,14 @@ const SeasonalShowcase = () => {
                     Disfruta el verano en cada sorbo.
                 </motion.p>
                 <div className='summer-refresh__cards'>
-                    <SummerRefreshCard
+
+                    {
+                        products.map((product, index) => (
+                            <SummerRefreshCard product={product} key={index} />
+                        ))
+                    }
+
+                    {/* <SummerRefreshCard
                         classCard={'summer-refresh__card summer-refresh__berry'}
                         classCardContainerBackgroundImages={'summer-refresh__contain-mask summer-refresh__contain-mask-berry'}
                         urlBackgroundImageProductFruit={'/background-barry.webp'}
@@ -196,7 +256,7 @@ const SeasonalShowcase = () => {
                         colorVariants={lemonadeStainVariants}
                         productVariants={lemonadeProductVariants}
                         titleVariants={LemonadeTitleVariants}
-                    />
+                    /> */}
                 </div>
             </div>
         </section>
